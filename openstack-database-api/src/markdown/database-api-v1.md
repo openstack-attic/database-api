@@ -468,6 +468,51 @@ Example entity:
         }
     }
 
+
+
+### Security Groups: `/v1/security-groups`
+
+A security group is is a collection of rules that act as a firewall to control
+traffic that is allowed to reach your database instance. Whenever an instance
+is created, a security group is also created and associated with the instance.
+You can add rules to the security group that control the inbound traffic
+allowed to reach your database instance.
+
+Example entity:
+
+    {
+        "created": "2013-04-04T20:42:54",
+        "description": "Default Security Group Description",
+          "id": "2",
+             "links": [
+           {
+               "href": "http://10.6.146.21:8779/v1.0/ten-id/security-groups/2",
+                "rel": "self"
+           }
+        ],
+        "name": "SecGroup_df65588e-ed08-497b-8803-daa5b83c9c0f",
+        "rules": [],
+        "updated": "2013-04-04T20:42:54"
+    }
+
+### Security Group Rules: `/v1/security-group-rules`
+
+Security group rules are rules that act as a firewall to control traffic that
+is allowed to reach your database instance. You can add rules to the security
+group associated with your database instance to control the inbound traffic
+allowed to reach your instance.
+
+Example entity:
+
+    {
+        "cidr": "0.0.0.0/0",
+        "from_port": 3306,
+        "id": "1",
+        "protocol": "tcp",
+        "to_port": 3306
+    }
+
+
 Core API
 --------
 
@@ -1073,7 +1118,7 @@ Response:
         ]
     }
 
-#### Get Flavor Details `GET /flavors/{flavor_id}
+#### Get Flavor Details `GET /flavors/{flavor_id}`
 
 Gets more detailed information about a given flavor.
 
@@ -1096,3 +1141,87 @@ Response:
             "ram": 512
         }
     }
+
+
+### Security Groups
+
+#### List Security Groups `GET /security_groups`
+
+Lists all of the Security Groups, with details of which instances they
+are attached to.
+
+Response:
+
+    {
+        "created": "2013-04-04T20:42:54",
+        "description": "Default Security Group Description",
+          "id": "2",
+             "links": [
+           {
+               "href": "http://10.6.146.21:8779/v1.0/ten-id/security-groups/2",
+                "rel": "self"
+           }
+        ],
+        "name": "SecGroup_df65588e-ed08-497b-8803-daa5b83c9c0f",
+        "rules": [],
+        "updated": "2013-04-04T20:42:54"
+    }
+
+#### Get Security Group `GET /security_groups/{security_group_id}`
+
+Gets more detailed information about a given security group.
+
+Response:
+
+    {
+        "created": "2013-04-04T20:42:54",
+        "description": "Default Security Group Description",
+          "id": "2",
+             "links": [
+           {
+               "href": "http://10.6.146.21:8779/v1.0/ten-id/security-groups/2",
+                "rel": "self"
+           }
+        ],
+        "name": "SecGroup_df65588e-ed08-497b-8803-daa5b83c9c0f",
+        "rules": [
+        {
+            "cidr": "0.0.0.0/0",
+            "from_port": 3306,
+            "id": "1",
+            "protocol": "tcp",
+            "to_port": 3306
+        }
+        ],
+        "updated": "2013-04-04T20:42:54"
+    }
+
+
+### Security Group Rules
+
+#### Add Security Group Rule `POST /security_group_rules`
+
+Creates a security group rule within the specified security group.
+
+Request:
+
+    {
+        "security_group_rule": {
+            "cidr": "0.0.0.0/0",
+             "group_id": "2",
+        }
+    }
+
+Response:
+
+    Status: 202 ACCEPTED
+
+#### Delete Security Group Rule
+`DELETE /security_group_rules/{security-group-rule-id}`
+
+Deletes a security group rule corresponding to the specified
+security-group-rule-id.
+
+Response:
+
+    Status: 204 DELETED

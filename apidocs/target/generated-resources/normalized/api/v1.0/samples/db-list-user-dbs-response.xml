@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Content-Type: application/xml
+Content-Length: 0
+Date: Wed, 27 Jun 2012 23:11:19 GMT
+
+<user name="testuser" xmlns="http://docs.openstack.org/database/api/v1.0">
+    <databases>
+        <database name="exampledb"/>
+    </databases>
+</user>

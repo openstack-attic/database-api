@@ -1,0 +1,86 @@
+HTTP/1.1 200 OK
+Content-Type: application/xml
+Via: 1.1 Repose (Repose/2.6.7)
+Content-Length: 2401
+Date: Mon, 18 Mar 2013 19:09:18 GMT
+Server: Jetty(8.0.y.z-SNAPSHOT)
+
+<instance created="2013-03-18 19:09:17.441489" deleted="False" deleted_at="None" id="098653ba-218b-47ce-936a-e0b749101f81" name="xml_rack_instance" status="ACTIVE" task_description="No tasks for the instance." tenant_id="3000" updated="2013-03-18 19:09:18.280855" xmlns="http://docs.openstack.org/database/api/v1.0">
+    <links>
+        <link href="https://ord.databases.api.rackspacecloud.com/v1.0/1234/instances/098653ba-218b-47ce-936a-e0b749101f81" rel="self"/>
+        <link href="https://ord.databases.api.rackspacecloud.com/instances/098653ba-218b-47ce-936a-e0b749101f81" rel="bookmark"/>
+    </links>
+    <server>
+        <status>
+            ACTIVE
+        </status>
+        <host>
+            hostname_1
+        </host>
+        <local_id>
+            0
+        </local_id>
+        <name>
+            xml_rack_instance
+        </name>
+        <deleted>
+            False
+        </deleted>
+        <tenant_id>
+            3000
+        </tenant_id>
+        <deleted_at>
+            None
+        </deleted_at>
+        <id>
+            b3aca411-ef1c-4c47-88d3-5a309096c204
+        </id>
+        <addresses>
+            <private>
+                <item>
+                    <addr>
+                        123.123.123.123
+                    </addr>
+                </item>
+            </private>
+        </addresses>
+    </server>
+    <volume id="VOL_d3870ed4-3f5b-4b78-8ce4-c81f35f0fe2c" size="4" used="0.163685983978">
+        <status>
+            in-use
+        </status>
+        <attachments>
+            <attachment>
+                <device>
+                    vdb
+                </device>
+                <server_id>
+                    b3aca411-ef1c-4c47-88d3-5a309096c204
+                </server_id>
+            </attachment>
+        </attachments>
+        <availability_zone>
+            fake-availability-zone
+        </availability_zone>
+        <created_at>
+            2001-01-01-12:30:30
+        </created_at>
+    </volume>
+    <guest_status state_description="running"/>
+    <service_status>
+        ACTIVE
+    </service_status>
+    <root_enabled>
+        2013-03-18 19:09:17.772833
+    </root_enabled>
+    <flavor id="3">
+        <links>
+            <link href="https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/3" rel="self"/>
+            <link href="https://ord.databases.api.rackspacecloud.com/flavors/3" rel="bookmark"/>
+        </links>
+    </flavor>
+    <root_enabled_by>
+        None
+    </root_enabled_by>
+</instance>
+

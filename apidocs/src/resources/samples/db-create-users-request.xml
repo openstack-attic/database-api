@@ -1,0 +1,18 @@
+POST /v1.0/1234/instances/098653ba-218b-47ce-936a-e0b749101f81/users HTTP/1.1
+User-Agent: python-reddwarfclient
+Host: ord.databases.api.rackspacecloud.com
+X-Auth-Token: 87c6033c-9ff6-405f-943e-2deb73f278b7
+Accept: application/xml
+Content-Type: application/xml
+
+<users xmlns="http://docs.openstack.org/database/api/v1.0">
+  <user password="password" name="dbuser1" database="databaseA"/>
+  <user password="password" name="dbuser2">
+    <databases>
+      <database name="databaseB"/>
+      <database name="databaseC"/>
+    </databases>
+  </user>
+  <user password="password" name="dbuser3" database="databaseD"/>
+</users>
+

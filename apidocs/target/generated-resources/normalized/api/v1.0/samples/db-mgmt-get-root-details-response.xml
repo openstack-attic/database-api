@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Content-Type: application/xml
+Via: 1.1 Repose (Repose/2.6.7)
+Content-Length: 159
+Date: Mon, 18 Mar 2013 19:09:18 GMT
+Server: Jetty(8.0.y.z-SNAPSHOT)
+
+<root_history enabled="2013-03-18 19:09:17.772833" id="098653ba-218b-47ce-936a-e0b749101f81" user="None" xmlns="http://docs.openstack.org/database/api/v1.0"/>
+

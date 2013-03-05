@@ -1,0 +1,32 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+Via: 1.1 Repose (Repose/2.6.7)
+Content-Length: 279
+Date: Mon, 18 Mar 2013 19:09:17 GMT
+Server: Jetty(8.0.y.z-SNAPSHOT)
+
+{
+    "links": [
+        {
+            "href": "https://ord.databases.api.rackspacecloud.com/v1.0/1234/instances/44b277eb-39be-4921-be31-3d61b43651d7/users?marker=dbuser2&limit=2", 
+            "rel": "next"
+        }
+    ], 
+    "users": [
+        {
+            "databases": [], 
+            "name": "dbuser1"
+        }, 
+        {
+            "databases": [
+                {
+                    "name": "databaseB"
+                }, 
+                {
+                    "name": "databaseC"
+                }
+            ], 
+            "name": "dbuser2"
+        }
+    ]
+}

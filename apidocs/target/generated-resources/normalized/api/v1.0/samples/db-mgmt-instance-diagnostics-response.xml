@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Content-Type: application/xml
+Via: 1.1 Repose (Repose/2.6.7)
+Content-Length: 159
+Date: Mon, 18 Mar 2013 19:09:18 GMT
+Server: Jetty(8.0.y.z-SNAPSHOT)
+
+<diagnostics fdSize="64" threads="2" version="1" vmHwm="2872" vmPeak="29160" vmRss="2872" vmSize="29096" xmlns="http://docs.openstack.org/database/api/v1.0"/>
+

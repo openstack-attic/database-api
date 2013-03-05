@@ -1,0 +1,27 @@
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+ <copy todir="/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/generated-resources/normalized/api/v1.0">
+  <fileset dir="src/resources">
+   <include name="xslts/**"/>
+  </fileset>
+  <fileset dir="src/resources">
+   <include name="samples/**"/>
+  </fileset>
+ </copy>
+ <copy file="../xsd/dbaas.xsd" tofile="/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/generated-resources/normalized/api/v1.0/xsd/cdb.xsd"/>
+ <copy file="../xsd/dbaas.xsd" tofile="/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/generated-resources/normalized/api/v1.0/cdb.xsd"/>
+ <copy file="src/resources/bookinfo.xml" tofile="/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/generated-resources/normalized/bookinfo.xml"/>
+ <java fork="true" jar="${net.sourceforge.saxon:saxon:jar}">
+  <arg value="-u"/>
+  <arg value="-s:../xsd/dbaas.wadl"/>
+  <arg value="-xsl:/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/generated-resources/xsl/normalizeWadl.xsl"/>
+  <arg value="-o:/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/generated-resources/normalized/api/v1.0/cdb.wadl"/>
+  <arg value="flattenXsds=false"/>
+ </java>
+ <replaceregexp replace="xsd/cdb.xsd" file="/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/generated-resources/normalized/api/v1.0/cdb.wadl" match="file:/.*/xsd/dbaas.xsd"/>
+ <war needxmlfile="false" destfile="/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/docbkx/webhelp/cdb-wadls.war">
+  <fileset dir="/Users/mike.asthalter/Documents/DBaaS-os-temp/temp-openstack-cdb/apidocs/target/generated-resources/normalized"/>
+ </war>
+</target>
+
+</project>

@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Content-Type: application/xml
+Via: 1.1 Repose (Repose/2.6.7)
+Content-Length: 118
+Date: Mon, 18 Mar 2013 19:09:18 GMT
+Server: Jetty(8.0.y.z-SNAPSHOT)
+
+<accounts xmlns="http://docs.openstack.org/database/api/v1.0">
+    <account id="3000" num_instances="2"/>
+</accounts>
+

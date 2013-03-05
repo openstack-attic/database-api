@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE feed
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<feed xmlns="http://www.w3.org/2005/Atom">
+   <title>OpenStack Cloud Databases Developer Guide API v1.0 revision history</title>
+   <link href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/atom.xml" rel="self"/>
+   <link href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/index.html"/>
+   <id>cdb-devguide</id>
+   <updated>2013-05-02T09:51:06-05:00</updated>
+   <entry>
+      <title>2013-05-02</title>
+      <link type="text/html" href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/index.html"/>
+      <id>cdb-devguide-2013-05-02</id>
+      <updated>2013-05-02</updated>
+      <content type="xhtml">
+         <div xmlns="http://www.w3.org/1999/xhtml">
+                    
+            <div class="itemizedlist">
+               <ul class="itemizedlist" type="disc" compact="compact">
+                  <li class="listitem">
+                     <p>This document is for the initial
+                                OpenStack review.</p>
+                  </li>
+               </ul>
+            </div>
+                
+         </div>
+      </content>
+   </entry>
+</feed>

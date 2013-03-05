@@ -468,6 +468,29 @@ Example entity:
         }
     }
 
+
+
+### Security Groups: `/v1/security-groups`
+
+A security group is is a collection of rules that act as a firewall to control traffic that is allowed to reach your database instance. Whenever an instance is created, a security group is also created and associated with the instance. You can add rules to the security group that control the inbound traffic allowed to reach your database instance.
+
+Example entity:
+
+    {
+        "TBD": "TBD"
+    }
+
+### Security Group Rules: `/v1/security-group-rules`
+
+Security group rules are rules that act as a firewall to control traffic that is allowed to reach your database instance. You can add rules to the security group associated with your database instance to control the inbound traffic allowed to reach your instance.
+
+Example entity:
+
+    {
+        "TBD": "TBD"
+    }
+
+
 Core API
 --------
 
@@ -1073,7 +1096,7 @@ Response:
         ]
     }
 
-#### Get Flavor Details `GET /flavors/{flavor_id}
+#### Get Flavor Details `GET /flavors/{flavor_id}`
 
 Gets more detailed information about a given flavor.
 
@@ -1096,3 +1119,69 @@ Response:
             "ram": 512
         }
     }
+    
+    
+### Security Groups
+
+#### List Security Groups `GET /security-groups`
+
+Lists all of the Security Groups, with details of which instances they are attached to.
+
+Response:
+
+    {
+        "security-group": "TBD"
+    }
+
+#### Get Security Group `GET /security-group/{security_group_id}`
+
+Gets more detailed information about a given security group.
+
+Response:
+
+    {
+        "security-group": "TBD"
+    }
+
+
+### Security Group Rules
+
+#### List Security Group Rules `GET /security-groups-rules/{secgroup-id}`
+
+Lists details of the specific security group with id {secgroup_id} including which instance it is attached to and details of the security group rules that it contains.
+
+Response:
+
+    {
+        "security-group-rule": "TBD"
+    }
+
+#### Create Security Group Rule `POST /security-group-rules`
+
+Creates a security group rule within the specified security group.
+
+Request:
+
+    {
+        "security-group-rule": "TBD"
+    }
+
+
+Response:
+
+    Status: 202 ACCEPTED
+
+#### Delete Security Group Rule `DELETE /security-group-rules/{security-group-rule-id}`
+
+Deletes a security group rule corresponding to the specified security-group-rule-id
+
+Request:
+
+    {
+        "security-group-rule": "TBD"
+    }
+
+
+Response:
+
+    Status: 202 ACCEPTED

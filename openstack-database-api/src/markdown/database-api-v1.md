@@ -468,7 +468,61 @@ Example entity:
         }
     }
 
+### Limits: `/v1/limits`
 
+Database-as-a-Service supports API rate limiting for its API. The rate limiting allows an administrator to configure limits on the type and number of API calls that can be made in a specific time interval. DBaaS also supports absolute limits. An admin can configure and impose absolute limits on resources consumed by users.
+
+When API rate limits are exceeded, HTTP requests will return a error with a status code of 413 "Request entity too large", and will also include a 'Retry-After' HTTP header. The response body will include the error details, and the delay before the request should be retried. Rate limits are applied in order, relative to the HTTP method, going from least to most specific.
+
+Absolute limits are specified as name/value pairs. The name of the absolute limit uniquely identifies the limit within a deployment. Please consult your provider for an exhaustive list of absolute value names. An absolute limit value is always specified as an integer. The name of the absolute limit determines the unit type of the integer value. For example, the name max_instances implies that the value is in terms of number of instances.
+
+Example entity:
+
+     {
+    	"limits": [
+        	{
+           		"max_instances": 10, 
+            	"max_volumes": 100, 
+            	"max_backups": 20,
+            	"verb": "ABSOLUTE"
+        	}, 
+        	{
+            	"nextAvailable": "2013-05-21T17:27:25Z", 
+            	"regex": ".*", 
+            	"remaining": 200, 
+            	"unit": "MINUTE", 
+            	"uri": "*", 
+            	"value": 200, 
+            	"verb": "POST"
+        	}, 
+        	{
+            	"nextAvailable": "2013-05-21T17:27:25Z", 
+            	"regex": ".*", 
+            	"remaining": 200, 
+            	"unit": "MINUTE", 
+            	"uri": "*", 
+            	"value": 200, 
+            	"verb": "PUT"
+        	}, 
+        	{
+            	"nextAvailable": "2013-05-21T17:27:25Z", 
+            	"regex": ".*", 
+           		"remaining": 200, 
+            	"unit": "MINUTE", 
+            	"uri": "*", 
+            	"value": 200, 
+            	"verb": "DELETE"
+        	}, 
+        	{
+            	"nextAvailable": "2013-05-21T17:27:25Z", 
+            	"regex": ".*", 
+            	"remaining": 199, 
+            	"unit": "MINUTE", 
+            	"uri": "*", 
+            	"value": 200, 
+            	"verb": "GET"
+        	}]
+		}
 
 ### Security Groups: `/v1/security-groups`
 

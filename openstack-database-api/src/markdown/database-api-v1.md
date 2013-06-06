@@ -1294,3 +1294,159 @@ security-group-rule-id.
 Response:
 
     Status: 204 DELETED
+
+
+### Backups
+
+#### Create Backup `POST /backups`
+
+Creates a new, full backup of an existing instance.
+
+Request:
+
+    {
+        "backup":
+        {
+            "description": null,
+            "instance": "d6338c9c-3cc8-4313-b98f-13cc0684cf15",
+            "name": "testback-backup"
+        }
+    }
+
+Response:
+
+    {
+        "backup":
+        {
+            "created": "2013-05-01T00:00:00",
+            "description": null,
+            "id": "aeb6fa4c-932d-4acc-a339-cccfb9f300b2",
+            "instance_id": "d6338c9c-3cc8-4313-b98f-13cc0684cf15",
+            "locationRef": null,
+            "name": "testback-backup",
+            "status": "NEW",
+            "updated": "2013-05-01T00:00:00"
+        }
+    }
+
+#### Get Backup `GET /backups/{backup_id}`
+
+Shows detailed information about the specified backup
+
+Response:
+
+    {
+        "backup":
+        {
+            "created": "2013-05-01T00:00:00",
+            "description": null,
+            "id": "aeb6fa4c-932d-4acc-a339-cccfb9f300b2",
+            "instance_id": "d6338c9c-3cc8-4313-b98f-13cc0684cf15",
+            "locationRef": "http://10.0.0.1:8080/v1/AUTH_xyz/z_CLOUDDB_BACKUPS/aeb6fa4c-932d-4acc-a339-cccfb9f300b2.xbstream.gz",
+            "name": "testback-backup",
+            "status": "COMPLETED",
+            "updated": "2013-05-01T00:00:00"
+        }
+    }
+
+#### List Backups `GET /backups`
+
+Shows detailed information about all backups for a tenant
+
+Response:
+
+    {
+        "backups":
+        [
+            {
+                "created": "2013-05-01T00:00:00",
+                "description": null,
+                "id": "aeb6fa4c-932d-4acc-a339-cccfb9f300b2",
+                "instance_id": "d6338c9c-3cc8-4313-b98f-13cc0684cf15",
+                "locationRef": null,
+                "name": "testback-backup",
+                "status": "COMPLETED",
+                "updated": "2013-05-01T00:00:00"
+            },
+            {
+                "created": "2013-05-04T00:00:00",
+                "description": null,
+                "id": "aeb6fa4c-932d-4acc-a339-cccfb9f300b3",
+                "instance_id": "d6338c9c-3cc8-4313-b98f-13cc0684cf15",
+                "locationRef": null,
+                "name": "testback-backup2",
+                "status": "COMPLETED",
+                "updated": "2013-05-04T00:00:00"
+            }
+        ]
+    }
+
+#### Delete Backup `DELETE /backups/{backup_id}`
+
+Response:
+
+    Status: 202 ACCEPTED
+
+#### Restore Backup `POST /instances`
+
+This operation asynchronously provisions a new database instance. This call
+requires the user to specify a flavor and a volume size. The service then
+provisions the instance with the requested flavor and sets up a volume of the
+specified size, which is the storage for the database instance.
+
+Finally, this will restore a copy of the database based on the specified
+backup id.
+
+Request:
+
+    {
+        "instance": {
+            "flavorRef": "https://endpoint/v1.0/1234/flavors/1",
+            "name": "dbaas_restore_instance",
+            "volume": {
+                "size": 2
+            },
+            "backup_id": "aeb6fa4c-932d-4acc-a339-cccfb9f300b3"
+        }
+    }
+
+Response:
+
+    Status: 200 OK
+
+    {
+        "instance": {
+            "created": "2013-05-04T00:00:00",
+            "flavor": {
+                "id": "1",
+                "links": [
+                    {
+                        "href": "https://endpoint/v1.0/1234/flavors/1",
+                        "rel": "self"
+                    },
+                    {
+                        "href": "https://endpoint/flavors/1",
+                        "rel": "bookmark"
+                    }
+                ]
+            },
+            "hostname": "e09ad9a3f73309469cf1f43d11e79549caf9acf2.somewhere.com",
+            "id": "dea5a2f7-3ec7-4496-adab-0abb5a42d635",
+            "links": [
+                {
+                    "href": "https://endpoint/v1.0/1234/instances/dea5a2f7-3ec7-4496-adab-0abb5a42d635",
+                    "rel": "self"
+                },
+                {
+                    "href": "https://endpoint/instances/dea5a2f7-3ec7-4496-adab-0abb5a42d635",
+                    "rel": "bookmark"
+                }
+            ],
+            "name": "dbaas_restore_instance",
+            "status": "BUILD",
+            "updated": "2013-05-04T00:00:00",
+            "volume": {
+                "size": 2
+            }
+        }
+    }

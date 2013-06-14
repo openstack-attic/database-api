@@ -1,4 +1,4 @@
 [gerrit]
 host=review.openstack.org
 port=29418
-project=stackforge/database-api.git
+project=openstack/database-api.git

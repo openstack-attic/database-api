@@ -313,7 +313,7 @@ Optional attributes:
 
 - `databases` (list)
 
-    - `Name` (string)
+    - `name` (string)
 
       Specifies database names for creating databases on instance creation.
 
@@ -328,13 +328,17 @@ Optional attributes:
 
 - `users` (list)
 
-    - `Name` (string)
+    - `name` (string)
 
       Specifies user name for the database on instance creation.
 
     - `password` (string)
 
       Specifies password for those users on instance creation.
+      
+      - `host` (string - optional)
+
+      Specifies the host (IP or name) from which this user is allowed to connect.
 
     - `databases` (list)
 
@@ -400,9 +404,9 @@ Example entity:
 
     {
          "database": {
+             "name": "testingdb",
              "character_set": "utf8",
-             "collate": "utf8_general_ci",
-             "name": "testingdb"
+             "collate": "utf8_general_ci"
          }
     }
 
@@ -420,11 +424,17 @@ Additional required attributes:
 
   Specifies the user password for database access.
 
-- `database` (list)
+- `databases` (list)
 
     - `name` (string)
       Name of the database that the user can access. One or more database names
       must be specified.
+
+Optional attributes:
+
+- `host` (string)
+
+  Specifies the host (ip/name) from which this user is allowed to connect.
 
 Example entity:
 
@@ -439,7 +449,8 @@ Example entity:
                  }
              ],
              "name": "dbuser",
-             "password": "password"
+             "password": "password",
+             "host": "appserver.myco.com"
          }
     }
 
@@ -611,9 +622,9 @@ Request:
         "instance": {
             "databases": [
                 {
+                    "name": "sampledb",
                     "character_set": "utf8",
-                    "collate": "utf8_general_ci",
-                    "name": "sampledb"
+                    "collate": "utf8_general_ci"
                 },
                 {
                     "name": "nextround"
@@ -1099,6 +1110,7 @@ Request:
             {
                 "name": "dbuser4",
                 "password": "password"
+                "host": "appserver.myco.org"
             }
         ]
     }

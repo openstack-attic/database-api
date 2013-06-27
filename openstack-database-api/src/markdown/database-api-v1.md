@@ -1225,7 +1225,7 @@ Response:
 
 ### Security Groups
 
-#### List Security Groups `GET /security_groups`
+#### List Security Groups `GET /security-groups`
 
 Lists all of the Security Groups, with details of which instances they
 are attached to.
@@ -1247,7 +1247,7 @@ Response:
         "updated": "2013-04-04T20:42:54"
     }
 
-#### Get Security Group `GET /security_groups/{security_group_id}`
+#### Get Security Group `GET /security-groups/{security-group-id}`
 
 Gets more detailed information about a given security group.
 
@@ -1279,7 +1279,7 @@ Response:
 
 ### Security Group Rules
 
-#### Add Security Group Rule `POST /security_group_rules`
+#### Add Security Group Rule `POST /security-group-rules`
 
 Creates a security group rule within the specified security group.
 
@@ -1298,7 +1298,7 @@ Response:
     Status: 202 ACCEPTED
 
 #### Delete Security Group Rule
-`DELETE /security_group_rules/{security-group-rule-id}`
+`DELETE /security-group-rules/{security-group-rule-id}`
 
 Deletes a security group rule corresponding to the specified
 security-group-rule-id.

@@ -420,7 +420,7 @@ Additional required attributes:
 
   Specifies the user password for database access.
 
-- `database` (list)
+- `databases` (list)
 
     - `name` (string)
       Name of the database that the user can access. One or more database names
@@ -1395,7 +1395,7 @@ provisions the instance with the requested flavor and sets up a volume of the
 specified size, which is the storage for the database instance.
 
 Finally, this will restore a copy of the database based on the specified
-backup id.
+'backupRef' of 'restorePoint'.
 
 Request:
 
@@ -1406,7 +1406,9 @@ Request:
             "volume": {
                 "size": 2
             },
-            "backup_id": "aeb6fa4c-932d-4acc-a339-cccfb9f300b3"
+            "restorePoint": {
+            	"backupRef": "aeb6fa4c-932d-4acc-a339-cccfb9f300b3"
+            }
         }
     }
 

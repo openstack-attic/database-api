@@ -570,6 +570,7 @@ Example entity:
            }
         ],
         "name": "SecGroup_df65588e-ed08-497b-8803-daa5b83c9c0f",
+        "instance_id":"2450c73f-7805-4afe-a42c-4094ab42666b",
         "rules": [],
         "updated": "2013-04-04T20:42:54"
     }

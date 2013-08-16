@@ -1338,6 +1338,7 @@ Response:
             "locationRef": null,
             "name": "testback-backup",
             "status": "NEW",
+            "size": 2.0,
             "updated": "2013-05-01T00:00:00"
         }
     }
@@ -1358,6 +1359,7 @@ Response:
             "locationRef": "http://10.0.0.1:8080/v1/AUTH_xyz/z_CLOUDDB_BACKUPS/aeb6fa4c-932d-4acc-a339-cccfb9f300b2.xbstream.gz",
             "name": "testback-backup",
             "status": "COMPLETED",
+            "size": 2.0,
             "updated": "2013-05-01T00:00:00"
         }
     }
@@ -1379,6 +1381,7 @@ Response:
                 "locationRef": null,
                 "name": "testback-backup",
                 "status": "COMPLETED",
+                "size": 2.0
                 "updated": "2013-05-01T00:00:00"
             },
             {
@@ -1389,6 +1392,7 @@ Response:
                 "locationRef": null,
                 "name": "testback-backup2",
                 "status": "COMPLETED",
+                "size": 1.9
                 "updated": "2013-05-04T00:00:00"
             }
         ]

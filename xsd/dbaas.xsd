@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../xslts/xslt/schema.xslt"?>
 
-<schema  elementFormDefault="qualified" 
+<schema  elementFormDefault="qualified"
          attributeFormDefault="unqualified"
          targetNamespace="http://docs.openstack.org/database/api/v1.0"
          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-         xmlns="http://www.w3.org/2001/XMLSchema" 
+         xmlns="http://www.w3.org/2001/XMLSchema"
          xmlns:dbaas="http://docs.openstack.org/database/api/v1.0"
          xmlns:xsdxt="http://docs.rackspacecloud.com/xsd-ext/v1.0">
 
@@ -95,7 +95,7 @@
       </xsd:documentation>
     </annotation>
   </element>
-  
+
   <!--Complex Types-->
   <complexType name="Users">
      <sequence>
@@ -107,8 +107,8 @@
            </annotation>
          </element>
       </sequence>
-   </complexType>     
-     
+   </complexType>
+
   <complexType name="User">
     <sequence>
        <element name="databases" type="dbaas:Database" minOccurs="0" maxOccurs="unbounded">
@@ -311,7 +311,7 @@
      </annotation>
    </attribute>
  </complexType>
-    
+
   <xsd:complexType name="Links">
       <xsd:sequence>
           <xsd:element name="link" type="dbaas:Link" minOccurs="0" maxOccurs="unbounded">
@@ -447,7 +447,7 @@
       </enumeration>
     </restriction>
   </simpleType>
-  
+
   <simpleType name="UserStatusType">
     <annotation>
       <xsd:documentation xml:lang="EN" xmlns="http://www.w3.org/1999/xhtml">

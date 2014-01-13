@@ -61,10 +61,10 @@ Date: Thu, 12 Apr 2012 18:50:20 GMT
     <service type="rax:object-cdn" name="cloudFilesCDN">
       <endpoint region="DFW"
         tenantId="MossoCloudFS_aaaaaaaa-bbbb-cccc-dddd-eeeeeeee"
-        publicURL="https://cdn1.clouddrive.com/v1/MossoCloudFS_aaaaaaaa-bbbb-cccc-dddd-eeeeeeee"/> 
+        publicURL="https://cdn1.clouddrive.com/v1/MossoCloudFS_aaaaaaaa-bbbb-cccc-dddd-eeeeeeee"/>
       <endpoint region="ORD"
         tenantId="MossoCloudFS_aaaaaaaa-bbbb-cccc-dddd-eeeeeeee"
-        publicURL="https://cdn2.clouddrive.com/v1/MossoCloudFS_aaaaaaaa-bbbb-cccc-dddd-eeeeeeee"/>    
+        publicURL="https://cdn2.clouddrive.com/v1/MossoCloudFS_aaaaaaaa-bbbb-cccc-dddd-eeeeeeee"/>
     </service>
     <service type="rax:dns" name="cloudDNS">
       <endpoint tenantId="1100111"

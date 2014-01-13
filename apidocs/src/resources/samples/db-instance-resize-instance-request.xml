@@ -7,6 +7,5 @@ Content-Type: application/xml
 
 <?xml version="1.0" ?>
 <resize xmlns="http://docs.openstack.org/database/api/v1.0">
-	<flavorRef>https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/2</flavorRef>
+        <flavorRef>https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/2</flavorRef>
 </resize>
-

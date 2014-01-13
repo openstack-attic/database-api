@@ -10,7 +10,7 @@
         <!ENTITY PUT    '<command xmlns="http://docbook.org/ns/docbook">PUT</command>'>
         <!ENTITY POST   '<command xmlns="http://docbook.org/ns/docbook">POST</command>'>
         <!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
-        
+
         <!-- changing authentication endpoints; define entities for US & UK rather than maintaining in text -->
         <!ENTITY ENDPOINT-US "https://identity.api.rackspacecloud.com/v1.1/">
         <!ENTITY ENDPOINT-UK "https://lon.identity.api.rackspacecloud.com/v1.1/">
@@ -36,10 +36,10 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns:m="http://www.w3.org/1998/Math/MathML"
-    xmlns:html="http://www.w3.org/1999/xhtml" 
+    xmlns:html="http://www.w3.org/1999/xhtml"
     xml:id="cdb-devguide"
     version="5.0">
-    
+
     <?rax title.font.size="35px" subtitle.font.size="20px"?>
     <title>OpenStack Cloud Databases Developer Guide</title>
     <titleabbrev>OpenStack Cloud Databases Developer
@@ -73,9 +73,9 @@
             <para>This document is intended for software developers
                 interested in developing applications using the
                 OpenStack Cloud Databases Application Programming
-                Interface (<abbrev>API</abbrev>). </para>
+                Interface (<abbrev>API</abbrev>).</para>
         </abstract>
-        
+
         <revhistory>
             <revision>
                 <date>2013-05-02</date>
@@ -87,9 +87,9 @@
                         </listitem>
                     </itemizedlist>
                 </revdescription>
-            </revision>           
+            </revision>
         </revhistory>
-        
+
     <cover>
         <para>this is a placeholder for the front cover</para>
     </cover>
@@ -100,7 +100,7 @@
       <raxm:displayname>API Developer Guide</raxm:displayname>
       <raxm:product version="v1.0">cdb</raxm:product>
       <raxm:priority>20</raxm:priority>
-    </raxm:metadata> 
+    </raxm:metadata>
     </info>
     <chapter xml:id="overview">
         <title>Overview</title>
@@ -134,11 +134,11 @@
         <?hard-pagebreak?>
         <section xml:id="Intended_Audience-d1e122">
             <title>Intended Audience</title>
-            <para> This Guide is intended to assist software
+            <para>This Guide is intended to assist software
                 developers who want to develop applications using the
                 Cloud Databases API. It assumes the reader has a
                 general understanding of databases and is familiar
-                with: </para>
+                with:</para>
             <itemizedlist spacing="compact">
                 <listitem>
                     <para>ReSTful web services</para>
@@ -165,23 +165,23 @@
             <para>You can download the most current versions of this
                 and other API-related documents from <link
                     xlink:href="http://docs.openstack.org/"
-                    >http://docs.openstack.org/</link>. </para>
+                    >http://docs.openstack.org/</link>.</para>
             <para>We welcome feedback, comments, and bug reports at
                 <link xlink:href="https://bugs.launchpad.net/reddwarf"
-                    >https://bugs.launchpad.net/reddwarf</link>. </para>
+                    >https://bugs.launchpad.net/reddwarf</link>.</para>
             <para>This API uses standard HTTP 1.1 response codes as
                 documented at: <link
                     xlink:href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html"
-                    >http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</link>. </para>
+                    >http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</link>.</para>
         </section>
         <?hard-pagebreak?>
     </chapter>
-    
+
     <chapter xml:id="Concepts-d1e563">
         <title>Concepts</title>
         <?dbhtml stop-chunking?>
-        <para> To use the Cloud Databases API effectively, you should
-            understand several key concepts: </para>
+        <para>To use the Cloud Databases API effectively, you should
+            understand several key concepts:</para>
         <section xml:id="DatabaseInstance-d1e588">
             <title>Database Instance</title>
             <para>A database instance is an isolated MySQL instance in
@@ -224,18 +224,18 @@
     </chapter>
     <chapter xml:id="General_API_Information-d1e633">
         <title>General API Information</title>
-        <para> The Cloud Databases API is implemented using a ReSTful
+        <para>The Cloud Databases API is implemented using a ReSTful
             web service interface. Like other cloud products, the
             Database Service shares a common token-based
             authentication system that allows seamless access between
-            products and services. </para>
+            products and services.</para>
         <note>
-            <para> All requests to authenticate against and operate the service are performed using
-                SSL over HTTP (HTTPS) on TCP port 443. </para>
+            <para>All requests to authenticate against and operate the service are performed using
+                SSL over HTTP (HTTPS) on TCP port 443.</para>
         </note>
         <section xml:id="Authentication-d1e647">
             <title>Authentication</title>
-            <para> Each HTTP request against the Cloud Database
+            <para>Each HTTP request against the Cloud Database
                 service requires the inclusion of specific
                 authentication credentials. A single deployment may
                 support multiple authentication schemes (OAuth, Basic
@@ -250,16 +250,16 @@
         </section>
         <section xml:id="DB_service_versions">
             <title>Cloud Databases Service Versions</title>
-            <para> The Cloud Databases version defines the contract
-                and build information for the API. </para>
+            <para>The Cloud Databases version defines the contract
+                and build information for the API.</para>
             <section xml:id="Contract_Version-d1e825">
                 <title>Contract Version</title>
-                <para> The contract version denotes the data model and
+                <para>The contract version denotes the data model and
                     behavior that the API supports. The requested
                     contract version is included in all request URLs.
                     Different contract versions of the API may be
                     available at any given time and are not guaranteed
-                    to be compatible with one another. 
+                    to be compatible with one another.
                 </para>
                 <example>
                         <title>Example Request URL (contract version
@@ -271,7 +271,7 @@
                         <para>This document pertains to contract
                             version 1.0.</para>
                     </note>
-                
+
             </section>
             <section xml:id="API_Version_Headers-d1e855">
                 <title>API Version</title>
@@ -284,9 +284,9 @@
         <?hard-pagebreak?>
         <section xml:id="datetimeformat">
             <title>Date/Time Format</title>
-            <para> The Database Service uses an ISO-8601 compliant
+            <para>The Database Service uses an ISO-8601 compliant
                 date format for the display and consumption of
-                date/time values. </para>
+                date/time values.</para>
             <para>The system timezone is in UTC. MySQL converts TIMESTAMP values from
                     the current time zone to UTC for storage, and back
                     from UTC to the current time zone for retrieval.
@@ -347,7 +347,7 @@
                     </tr>
                 </tbody>
             </table>
-            
+
         </section>
         <section xml:id="pagination">
             <title>Pagination</title>
@@ -359,7 +359,7 @@
                 20. If a request supplies no limit or one that exceeds
                 the configured default limit, the default is used
                 instead.</para>
-            <para> Pagination provides the ability to limit the size
+            <para>Pagination provides the ability to limit the size
                 of the returned data as well as retrieve a specified
                 subset of a large data set. Pagination has two key
                 concepts: limit and marker. <emphasis>Limit</emphasis>
@@ -372,9 +372,9 @@
                 request the next 10 instances after the instance
                 "1234" as follows:
                     <code>?limit=10&amp;marker=1234</code>. Items are
-                displayed sorted by ID. </para>
+                displayed sorted by ID.</para>
             <para>Pagination applies only to the calls listed in the
-                following table: </para>
+                following table:</para>
             <informaltable rules="all">
                 <thead>
                     <tr align="center">
@@ -394,13 +394,13 @@
                     <tr>
                         <td colspan="1">&GET;</td>
                         <td colspan="2">
-                            /instances/{instanceId}/databases </td>
+                            /instances/{instanceId}/databases</td>
                         <td colspan="3">Lists databases for the
                             specified instance.</td>
                     </tr>
                     <tr>
                         <td colspan="1">&GET;</td>
-                        <td colspan="2"> /instances/{instanceId}/users </td>
+                        <td colspan="2"> /instances/{instanceId}/users</td>
                         <td colspan="3">Lists the users in the
                             specified database instance.</td>
                     </tr>
@@ -460,11 +460,11 @@
         </section>
         <section xml:id="DB_faults">
             <title>Faults</title>
-            <para> When an error occurs, the Database Service returns
+            <para>When an error occurs, the Database Service returns
                 a fault object containing an HTTP error response code
                 that denotes the type of error. In the body of the
                 response, the system will return additional
-                information about the fault. </para>
+                information about the fault.</para>
             <para>The following table lists possible fault types with their associated error codes
                 and descriptions.</para>
             <informaltable rules="all">
@@ -548,7 +548,7 @@
             <para>The following two  <code>instanceFault</code>
                 examples show errors when the server has erred or
                 cannot perform the requested operation:</para>
-            
+
             <example>
                 <title>Example instanceFault Response: XML</title>
                 <?dbfo keep-together="always"?>
@@ -563,7 +563,7 @@
 <xi:include href="samples/db-faults-instanceFault.json" parse="text"/>
                     </programlisting>
             </example>
-            <para> The error code (<code>code</code>) is returned in the body of the response for
+            <para>The error code (<code>code</code>) is returned in the body of the response for
                 convenience. The <code>message</code> element returns a human-readable message that
                 is appropriate for display to the end user. The <code>details</code> element is
                 optional and may contain information that is useful for tracking down an error, such
@@ -571,7 +571,7 @@
                 display to an end user, depending on the role and experience of the end user.</para>
             <para>The fault's root element (for example,
                     <code>instanceFault</code>) may change depending
-                on the type of error. </para>
+                on the type of error.</para>
             <para><?rax-fo keep-with-next?>The following two <code>badRequest</code> examples
                 show errors when the volume size is invalid:</para>
             <example>
@@ -590,7 +590,7 @@
 <xi:include href="samples/db-faults-badRequest.json" parse="text"/>
                     </programlisting>
             </example>
-            <para> The next two examples show
+            <para>The next two examples show
                     <code>itemNotFound</code> errors:</para>
             <example>
                 <title>Example itemNotFound Fault: XML</title>
@@ -706,7 +706,7 @@
                 </listitem>
                 <listitem>
                     <para>ACTIVE &ndash; The database instance is
-                        online and available to take requests.</para>     
+                        online and available to take requests.</para>
                 </listitem>
                 <listitem>
                     <para>BLOCKED &ndash; The database instance is
@@ -720,7 +720,7 @@
                     <para>SHUTDOWN &ndash; The database instance is
                         terminating services. Also, SHUTDOWN is
                         returned if for any reason the MySQL instance
-                        is shut down but not the actual server. </para>
+                        is shut down but not the actual server.</para>
                     <para>
                         <note>
                             <para>If MySQL has crashed (causing the
@@ -732,13 +732,13 @@
                 <listitem>
                     <para>ERROR &ndash; The last operation for the
                         database instance failed due to an
-                        error.</para>     
-                </listitem> 
+                        error.</para>
+                </listitem>
             </itemizedlist>
         </section>
     </chapter>
-    
-    <chapter xml:id="API_Operations-d1e2264" 
+
+    <chapter xml:id="API_Operations-d1e2264"
         xmlns="http://docbook.org/ns/docbook"
         role="api-reference">
         <title>API Operations</title>
@@ -762,9 +762,9 @@
                     <wadl:method href="getVersionInfo" />
                 </wadl:resource>
             </wadl:resources>
-            
+
         </section>
-        
+
         <section xml:id="Database_Instances">
             <title>Database Instances</title>
             <para>This section describes the operations that are supported for database instances.</para>
@@ -776,13 +776,13 @@
 
                 <wadl:resource href="../../../xsd/dbaas.wadl#instanceId">
                     <wadl:method href="getInstanceById"/>
-                    <wadl:method href="deleteInstance"/>  
+                    <wadl:method href="deleteInstance"/>
                 </wadl:resource>
                 <wadl:resource href="../../../xsd/dbaas.wadl#root">
                     <wadl:method href="createRoot"/>
                     <wadl:method href="isRootEnabled"/>
                 </wadl:resource>
-            </wadl:resources>               
+            </wadl:resources>
         </section>
 
         <section xml:id="Database_Instances_Actions">
@@ -811,8 +811,8 @@
                     <wadl:method href="deleteDatabase"/>
                 </wadl:resource>
             </wadl:resources>
-        </section>      
-        
+        </section>
+
         <section xml:id="user_management">
             <title>Users</title>
             <para>This section describes the operations that are
@@ -823,7 +823,7 @@
                 on a cloud database instance, a user named USER and a
                 database named DATABASE exist, and within MySQL, a
                 GRANT ALL ON DATABASE.* TO USER has been issued on the
-                instance. </para>
+                instance.</para>
             <warning>
                 <para>There is a bug in a python library that
                     development is using that may cause incorrect user
@@ -860,7 +860,7 @@
                 </wadl:resource>
             </wadl:resources>
         </section>
-           
+
         <section xml:id="flavors">
             <title>Flavors</title>
             <para>This section describes the operations that are
@@ -901,11 +901,11 @@
         <glossentry xml:id="Volume-d1e019">
             <glossterm>volume</glossterm>
             <glossdef>
-                <para>A volume is user-specified storage that contains the MySQL data directory. 
-                    Volumes are automatically provisioned on shared Internet Small Computer System Interface (iSCSI) 
-                    storage area networks (SAN) that provide for increased performance, scalability, availability 
-                    and manageability. Applications with high I/O demands are performance optimized and data is 
-                    protected through both local and network RAID-10. Additionally, network RAID provides synchronous 
+                <para>A volume is user-specified storage that contains the MySQL data directory.
+                    Volumes are automatically provisioned on shared Internet Small Computer System Interface (iSCSI)
+                    storage area networks (SAN) that provide for increased performance, scalability, availability
+                    and manageability. Applications with high I/O demands are performance optimized and data is
+                    protected through both local and network RAID-10. Additionally, network RAID provides synchronous
                     replication of volumes with automatic failover and load balancing across available storage clusters.</para>
             </glossdef>
         </glossentry>

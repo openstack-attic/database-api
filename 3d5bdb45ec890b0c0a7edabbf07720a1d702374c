@@ -1,0 +1,8 @@
+Verified+2: Jenkins
+Approved+1: SlickNik <SlickNik@gmail.com>
+Code-Review+2: SlickNik <SlickNik@gmail.com>
+Submitted-by: Jenkins
+Submitted-at: Mon, 13 Jan 2014 09:30:17 +0000
+Reviewed-on: https://review.openstack.org/66216
+Project: openstack/database-api
+Branch: refs/heads/master

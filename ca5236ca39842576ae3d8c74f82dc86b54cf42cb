@@ -1,0 +1,9 @@
+Verified+2: Jenkins
+Approved+1: Tom Fifield <tom@openstack.org>
+Code-Review+2: Tom Fifield <tom@openstack.org>
+Code-Review+2: SlickNik <SlickNik@gmail.com>
+Submitted-by: Jenkins
+Submitted-at: Tue, 14 Jan 2014 08:34:40 +0000
+Reviewed-on: https://review.openstack.org/66437
+Project: openstack/database-api
+Branch: refs/heads/master

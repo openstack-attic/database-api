@@ -1,0 +1,27 @@
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+ <copy todir="/Users/dian4554/Documents/2.0/database-api/apidocs/target/generated-resources/normalized/api/v1.0">
+  <fileset dir="src">
+   <include name="xslts/**"/>
+  </fileset>
+  <fileset dir="src">
+   <include name="samples/**"/>
+  </fileset>
+ </copy>
+ <copy file="src/xsd/dbaas.xsd" tofile="/Users/dian4554/Documents/2.0/database-api/apidocs/target/generated-resources/normalized/api/v1.0/xsd/cdb.xsd"/>
+ <copy file="src/xsd/dbaas.xsd" tofile="/Users/dian4554/Documents/2.0/database-api/apidocs/target/generated-resources/normalized/api/v1.0/cdb.xsd"/>
+ <copy file="src/bookinfo.xml" tofile="/Users/dian4554/Documents/2.0/database-api/apidocs/target/generated-resources/normalized/bookinfo.xml"/>
+ <java fork="true" jar="${net.sourceforge.saxon:saxon:jar}">
+  <arg value="-u"/>
+  <arg value="-s:src/xsd/dbaas.wadl"/>
+  <arg value="-xsl:/Users/dian4554/Documents/2.0/database-api/apidocs/target/generated-resources/xsl/normalizeWadl.xsl"/>
+  <arg value="-o:/Users/dian4554/Documents/2.0/database-api/apidocs/target/generated-resources/normalized/api/v1.0/cdb.wadl"/>
+  <arg value="flattenXsds=false"/>
+ </java>
+ <replaceregexp replace="xsd/cdb.xsd" file="/Users/dian4554/Documents/2.0/database-api/apidocs/target/generated-resources/normalized/api/v1.0/cdb.wadl" match="file:/.*/src/xsd/dbaas.xsd"/>
+ <war needxmlfile="false" destfile="/Users/dian4554/Documents/2.0/database-api/apidocs/target/docbkx/webhelp/cdb-wadls.war">
+  <fileset dir="/Users/dian4554/Documents/2.0/database-api/apidocs/target/generated-resources/normalized"/>
+ </war>
+</target>
+
+</project>

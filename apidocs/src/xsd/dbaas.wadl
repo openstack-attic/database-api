@@ -107,12 +107,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Version Details requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-version-request.xml"/>
+                    <xsdxt:code href="../samples/db-version-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-version-request.json"/>
+                    <xsdxt:code href="../samples/db-version-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -120,13 +120,13 @@
             <representation mediaType="application/xml" >
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Version Details responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-version-response.xml"/>
+                    <xsdxt:code href="../samples/db-version-response.xml"/>
                 </doc>
             </representation>
 
             <representation mediaType="application/json" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-version-response.json"/>
+                    <xsdxt:code href="../samples/db-version-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -145,12 +145,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Versions requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-versions-request.xml"/>
+                    <xsdxt:code href="../samples/db-versions-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-versions-request.json"/>
+                    <xsdxt:code href="../samples/db-versions-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -158,12 +158,12 @@
             <representation mediaType="application/xml" >
                  <doc>
                      <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Versions responses:</para>
-                     <xsdxt:code href="../apidocs/src/resources/samples/db-versions-response.xml"/>
+                     <xsdxt:code href="../samples/db-versions-response.xml"/>
                  </doc>
             </representation>
             <representation mediaType="application/json" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-versions-response.json"/>
+                    <xsdxt:code href="../samples/db-versions-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -260,24 +260,24 @@
                 element="dbaas:DatabaseInstance">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Create Database Instance requests and responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-instance-request.xml"/>
+                    <xsdxt:code href="../samples/db-create-instance-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-instance-request.json"/>
+                    <xsdxt:code href="../samples/db-create-instance-request.json"/>
                 </doc>
             </representation>
         </request>
         <response status="200">
             <representation mediaType="application/xml" element="dbaas:DatabaseInstance" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-instance-response.xml"/>
+                    <xsdxt:code href="../samples/db-create-instance-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-instance-response.json"/>
+                    <xsdxt:code href="../samples/db-create-instance-response.json"/>
                     <para xmlns="http://docbook.org/ns/docbook">For convenience, notice in the response examples above that resources contain links to themselves. This allows a client to easily obtain
                         resource URIs rather than to construct them. There are two kinds of link relations
                         associated with resources. A <code>self</code> link contains a <emphasis>versioned</emphasis> link to the resource. These
@@ -301,12 +301,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Delete Database Instance requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-instance-request.xml"/>
+                    <xsdxt:code href="../samples/db-delete-instance-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-instance-request.json"/>
+                    <xsdxt:code href="../samples/db-delete-instance-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -316,12 +316,12 @@
             <representation mediaType="application/xml" element="dbaas:unprocessableEntity">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Delete Database Instance responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-instance-response.xml"/>
+                    <xsdxt:code href="../samples/db-delete-instance-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-instance-response.json"/>
+                    <xsdxt:code href="../samples/db-delete-instance-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -339,12 +339,12 @@
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List All Database Instances Detail requests:</para>
 
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instances-index-request.xml"/>
+                    <xsdxt:code href="../samples/db-instances-index-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instances-index-request.json"/>
+                    <xsdxt:code href="../samples/db-instances-index-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -353,12 +353,12 @@
                 <doc>
                    <para xmlns="http://docbook.org/ns/docbook">The following examples show the List All Database Instances responses:</para>
 
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instances-index-response.xml"/>
+                    <xsdxt:code href="../samples/db-instances-index-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instances-index-response.json"/>
+                    <xsdxt:code href="../samples/db-instances-index-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -383,12 +383,12 @@
                 <representation mediaType="application/xml">
                     <doc>
                         <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Database Instance Status and Details requests:</para>
-                        <xsdxt:code href="../apidocs/src/resources/samples/db-instance-status-detail-request.xml"/>
+                        <xsdxt:code href="../samples/db-instance-status-detail-request-xml.txt"/>
                     </doc>
                 </representation>
                 <representation mediaType="application/json">
                     <doc>
-                        <xsdxt:code href="../apidocs/src/resources/samples/db-instance-status-detail-request.xml"/>
+                        <xsdxt:code href="../samples/db-instance-status-detail-request-xml.txt"/>
                     </doc>
                 </representation>
         </request>
@@ -397,13 +397,13 @@
                 element="dbaas:DatabaseInstance" >
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Database Instance Status and Details responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-status-detail-response.xml"/>
+                    <xsdxt:code href="../samples/db-instance-status-detail-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:DatabaseInstance" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-status-detail-response.json"/>
+                    <xsdxt:code href="../samples/db-instance-status-detail-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -423,12 +423,12 @@
             <representation mediaType="application/xml" element="dbaas:Restart">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Restart Instance requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-restart-request.xml"/>
+                    <xsdxt:code href="../samples/db-instance-restart-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json" element="dbaas:Restart">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-restart-request.json"/>
+                    <xsdxt:code href="../samples/db-instance-restart-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -436,12 +436,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Restart Instance responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-restart-response.xml"/>
+                    <xsdxt:code href="../samples/db-instance-restart-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-restart-response.json"/>
+                    <xsdxt:code href="../samples/db-instance-restart-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -460,13 +460,13 @@
                             element="dbaas:Resize">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Resize Instance requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-resize-instance-request.xml"/>
+                    <xsdxt:code href="../samples/db-instance-resize-instance-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                             element="dbaas:Resize">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-resize-instance-request.json"/>
+                    <xsdxt:code href="../samples/db-instance-resize-instance-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -474,12 +474,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Resize Instance responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-resize-instance-response.xml"/>
+                    <xsdxt:code href="../samples/db-instance-resize-instance-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-resize-instance-response.json"/>
+                    <xsdxt:code href="../samples/db-instance-resize-instance-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -501,13 +501,13 @@
                             element="dbaas:Resize">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Resize Instance Volume requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-resize-volume-request.xml"/>
+                    <xsdxt:code href="../samples/db-instance-resize-volume-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                             element="dbaas:Resize">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-resize-volume-request.json"/>
+                    <xsdxt:code href="../samples/db-instance-resize-volume-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -515,12 +515,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Resize Instance Volume responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-resize-volume-response.xml"/>
+                    <xsdxt:code href="../samples/db-instance-resize-volume-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-instance-resize-volume-response.json"/>
+                    <xsdxt:code href="../samples/db-instance-resize-volume-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -652,13 +652,13 @@
                 element="dbaas:Database" >
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Create Database requests:<?rax-fo keep-with-next?></para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-databases-request.xml"/>
+                    <xsdxt:code href="../samples/db-create-databases-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:Database" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-databases-request.json"/>
+                    <xsdxt:code href="../samples/db-create-databases-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -666,12 +666,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Create Database responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-databases-response.xml"/>
+                    <xsdxt:code href="../samples/db-create-databases-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-databases-response.json"/>
+                    <xsdxt:code href="../samples/db-create-databases-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -691,24 +691,24 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Databases for Instance requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-databases-request.xml"/>
+                    <xsdxt:code href="../samples/db-list-databases-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-databases-request.json"/>
+                    <xsdxt:code href="../samples/db-list-databases-request.json"/>
                 </doc>
             </representation>
 
             <representation mediaType="application/xml">
                 <doc title="List Databases for Instance Paged Request: XML">
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the <emphasis>paginated</emphasis> List Databases for Instance requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-databases-pagination-request.xml"/>
+                    <xsdxt:code href="../samples/db-list-databases-pagination-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc title="List Databases for Instance Paged Request: JSON">
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-databases-pagination-request.json"/>
+                    <xsdxt:code href="../samples/db-list-databases-pagination-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -717,13 +717,13 @@
                 element="dbaas:Databases" >
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Databases for Instance responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-databases-response.xml"/>
+                    <xsdxt:code href="../samples/db-list-databases-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:Databases" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-databases-response.json"/>
+                    <xsdxt:code href="../samples/db-list-databases-response.json"/>
                 </doc>
             </representation>
 
@@ -731,13 +731,13 @@
                 element="dbaas:Databases" >
                 <doc title="List Databases for Instance Paged Response: XML">
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the <emphasis>paginated</emphasis> List Databases for Instance responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-databases-pagination-response.xml"/>
+                    <xsdxt:code href="../samples/db-list-databases-pagination-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:Databases" >
                 <doc title="List Databases for Instance Paged Response: JSON">
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-databases-pagination-response.json"/>
+                    <xsdxt:code href="../samples/db-list-databases-pagination-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -754,12 +754,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Delete Database requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-databases-request.xml"/>
+                    <xsdxt:code href="../samples/db-delete-databases-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-databases-request.json"/>
+                    <xsdxt:code href="../samples/db-delete-databases-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -767,12 +767,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Delete Database responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-databases-response.xml"/>
+                    <xsdxt:code href="../samples/db-delete-databases-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-databases-response.json"/>
+                    <xsdxt:code href="../samples/db-delete-databases-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -923,12 +923,12 @@
                 element="dbaas:Users" >
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Create User requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-users-request.xml"/>
+                    <xsdxt:code href="../samples/db-create-users-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-users-request.json"/>
+                    <xsdxt:code href="../samples/db-create-users-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -936,12 +936,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Create User responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-users-response.xml"/>
+                    <xsdxt:code href="../samples/db-create-users-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-create-users-response.json"/>
+                    <xsdxt:code href="../samples/db-create-users-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -976,24 +976,24 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Users in Database Instance requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-users-request.xml"/>
+                    <xsdxt:code href="../samples/db-list-users-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-users-request.json"/>
+                    <xsdxt:code href="../samples/db-list-users-request.json"/>
                 </doc>
             </representation>
 
             <representation mediaType="application/xml">
                 <doc title="List Users in Database Instance Paged Request: XML">
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the <emphasis>paginated</emphasis> List Users in Database Instance requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-users-pagination-request.xml"/>
+                    <xsdxt:code href="../samples/db-list-users-pagination-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc title="List Users in Database Instance Paged Request: JSON">
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-users-pagination-request.json"/>
+                    <xsdxt:code href="../samples/db-list-users-pagination-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1003,13 +1003,13 @@
                 <doc title="List Users in Database Instance Response: XML">
                     <?hard-pagebreak?>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Users in Database Instance responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-users-response.xml"/>
+                    <xsdxt:code href="../samples/db-list-users-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:Users" >
                 <doc title="List Users in Database Instance Response: JSON">
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-users-response.json"/>
+                    <xsdxt:code href="../samples/db-list-users-response.json"/>
                 </doc>
             </representation>
 
@@ -1017,13 +1017,13 @@
                 element="dbaas:Users" >
                 <doc title="List Users in Database Instance Paged Response: XML">
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the <emphasis>paginated</emphasis> List Users in Database Instance responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-users-pagination-response.xml"/>
+                    <xsdxt:code href="../samples/db-list-users-pagination-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:Users" >
                 <doc title="List Users in Database Instance Paged Response: JSON">
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-users-pagination-response.json"/>
+                    <xsdxt:code href="../samples/db-list-users-pagination-response.json"/>
                 </doc>
             </representation>
 
@@ -1043,12 +1043,12 @@
             <representation mediaType="application/xml" element="dbaas:Users">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Change User(s) Password requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-change-users-password-request.xml"/>
+                    <xsdxt:code href="../samples/db-change-users-password-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-change-users-password-request.json"/>
+                    <xsdxt:code href="../samples/db-change-users-password-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1058,13 +1058,13 @@
                 <doc>
                     <?hard-pagebreak?>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Change User(s) Password responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-change-users-password-response.xml"/>
+                    <xsdxt:code href="../samples/db-change-users-password-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:Users" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-change-users-password-response.json"/>
+                    <xsdxt:code href="../samples/db-change-users-password-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1087,12 +1087,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Delete User requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-users-request.xml"/>
+                    <xsdxt:code href="../samples/db-delete-users-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-users-request.json"/>
+                    <xsdxt:code href="../samples/db-delete-users-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1100,12 +1100,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Delete User responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-users-response.xml"/>
+                    <xsdxt:code href="../samples/db-delete-users-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-delete-users-response.json"/>
+                    <xsdxt:code href="../samples/db-delete-users-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1122,12 +1122,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List User requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-user-dbs-request.xml"/>
+                    <xsdxt:code href="../samples/db-list-user-dbs-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-user-dbs-request.json"/>
+                    <xsdxt:code href="../samples/db-list-user-dbs-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1135,12 +1135,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List User responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-user-dbs-response.xml"/>
+                    <xsdxt:code href="../samples/db-list-user-dbs-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-user-dbs-response.json"/>
+                    <xsdxt:code href="../samples/db-list-user-dbs-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1158,12 +1158,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List User Access requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-user-access-request.xml"/>
+                    <xsdxt:code href="../samples/db-list-user-access-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-user-access-request.json"/>
+                    <xsdxt:code href="../samples/db-list-user-access-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1171,12 +1171,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List User Access responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-user-access-response.xml"/>
+                    <xsdxt:code href="../samples/db-list-user-access-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-list-user-access-response.json"/>
+                    <xsdxt:code href="../samples/db-list-user-access-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1196,12 +1196,12 @@
             <representation mediaType="application/xml" element="dbaas:Database">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Grant User Access requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-grant-user-access-request.xml"/>
+                    <xsdxt:code href="../samples/db-grant-user-access-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-grant-user-access-request.json"/>
+                    <xsdxt:code href="../samples/db-grant-user-access-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1209,12 +1209,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Grant User Access responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-grant-user-access-response.xml"/>
+                    <xsdxt:code href="../samples/db-grant-user-access-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-grant-user-access-response.json"/>
+                    <xsdxt:code href="../samples/db-grant-user-access-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1232,12 +1232,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Revoke User Access requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-revoke-user-access-request.xml"/>
+                    <xsdxt:code href="../samples/db-revoke-user-access-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-revoke-user-access-request.json"/>
+                    <xsdxt:code href="../samples/db-revoke-user-access-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1245,12 +1245,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Revoke User Access responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-revoke-user-access-response.xml"/>
+                    <xsdxt:code href="../samples/db-revoke-user-access-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-revoke-user-access-response.json"/>
+                    <xsdxt:code href="../samples/db-revoke-user-access-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1273,12 +1273,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Enable Root User requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-enable-root-user-request.xml"/>
+                    <xsdxt:code href="../samples/db-enable-root-user-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-enable-root-user-request.json"/>
+                    <xsdxt:code href="../samples/db-enable-root-user-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1287,14 +1287,14 @@
                 element="dbaas:User">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Enable Root User responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-enable-root-user-response.xml"/>
+                    <xsdxt:code href="../samples/db-enable-root-user-response.xml"/>
                 </doc>
             </representation>
 
             <representation mediaType="application/json"
                 element="dbaas:User">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-enable-root-user-response.json"/>
+                    <xsdxt:code href="../samples/db-enable-root-user-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1311,12 +1311,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Check Root User Access requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-check-root-user-request.xml"/>
+                    <xsdxt:code href="../samples/db-check-root-user-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-check-root-user-request.json"/>
+                    <xsdxt:code href="../samples/db-check-root-user-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1325,13 +1325,13 @@
                 element="dbaas:RootEnabled" >
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the Check Root User Access responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-check-root-user-response.xml"/>
+                    <xsdxt:code href="../samples/db-check-root-user-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:RootEnabled" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-check-root-user-response.json"/>
+                    <xsdxt:code href="../samples/db-check-root-user-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1351,12 +1351,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Flavors requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-flavors-request.xml"/>
+                    <xsdxt:code href="../samples/db-flavors-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-flavors-request.json"/>
+                    <xsdxt:code href="../samples/db-flavors-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1365,14 +1365,14 @@
                 element="dbaas:Flavors" >
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Flavors responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-flavors-response.xml"/>
+                    <xsdxt:code href="../samples/db-flavors-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:Flavors" >
                 <doc>
                     <?hard-pagebreak?>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-flavors-response.json"/>
+                    <xsdxt:code href="../samples/db-flavors-response.json"/>
                 </doc>
             </representation>
         </response>
@@ -1395,12 +1395,12 @@
             <representation mediaType="application/xml">
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Flavor By ID requests:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-flavors-by-id-request.xml"/>
+                    <xsdxt:code href="../samples/db-flavors-by-id-request-xml.txt"/>
                 </doc>
             </representation>
             <representation mediaType="application/json">
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-flavors-by-id-request.json"/>
+                    <xsdxt:code href="../samples/db-flavors-by-id-request.json"/>
                 </doc>
             </representation>
         </request>
@@ -1409,13 +1409,13 @@
                 element="dbaas:Flavor" >
                 <doc>
                     <para xmlns="http://docbook.org/ns/docbook">The following examples show the List Flavor By ID responses:</para>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-flavors-by-id-response.xml"/>
+                    <xsdxt:code href="../samples/db-flavors-by-id-response.xml"/>
                 </doc>
             </representation>
             <representation mediaType="application/json"
                 element="dbaas:Flavor" >
                 <doc>
-                    <xsdxt:code href="../apidocs/src/resources/samples/db-flavors-by-id-response.json"/>
+                    <xsdxt:code href="../samples/db-flavors-by-id-response.json"/>
                 </doc>
             </representation>
         </response>

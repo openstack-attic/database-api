@@ -37,7 +37,7 @@
 	    <phase>generate-sources</phase>
 	    <configuration>
 	      <security>reviewer</security>
-	      <sourceDirectory>src/resources</sourceDirectory>
+	      <sourceDirectory>src</sourceDirectory>
 	      <highlightSource>false</highlightSource>
 	      <trimWadlUriCount>2</trimWadlUriCount>
 	      <!-- this is the public-facing client developer guide formerly known as PublicAPISpec.xml -->
@@ -91,27 +91,27 @@
 		  <configuration>
 		    <target>
 		      <copy todir="${project.build.directory}/generated-resources/normalized/api/v1.0">
-			<fileset dir="src/resources">
+			<fileset dir="src">
 			  <include name="xslts/**"/>
 			</fileset>
-			<fileset dir="src/resources">
+			<fileset dir="src">
 			  <include name="samples/**"/>
 			</fileset>
 		      </copy>
-		      <copy file="../xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/xsd/cdb.xsd"/>
-		      <copy file="../xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.xsd"/>
-		      <copy file="src/resources/bookinfo.xml" tofile="${project.build.directory}/generated-resources/normalized/bookinfo.xml"/>
+		      <copy file="src/xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/xsd/cdb.xsd"/>
+		      <copy file="src/xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.xsd"/>
+		      <copy file="src/bookinfo.xml" tofile="${project.build.directory}/generated-resources/normalized/bookinfo.xml"/>
 		      <java
 			  jar="${net.sourceforge.saxon:saxon:jar}"
 			  fork="true">
 			<arg value="-u"/>
-			<arg value="-s:../xsd/dbaas.wadl"/>
+			<arg value="-s:src/xsd/dbaas.wadl"/>
 			<arg value="-xsl:${project.build.directory}/generated-resources/xsl/normalizeWadl.xsl"/>
 			<arg value="-o:${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.wadl"/>
 			<arg value="flattenXsds=false"/>
 		      </java>
 		      <replaceregexp file="${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.wadl"
-				     match="file:/.*/xsd/dbaas.xsd"
+				     match="file:/.*/src/xsd/dbaas.xsd"
 				     replace="xsd/cdb.xsd"/>
 		      <war destfile="${project.build.directory}/docbkx/webhelp/cdb-wadls.war" needxmlfile="false">
 			<fileset dir="${project.build.directory}/generated-resources/normalized"/>			

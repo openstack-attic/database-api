@@ -1,0 +1,19 @@
+{
+    "account": {
+        "id": "3000", 
+        "instances": [
+            {
+                "host": "hostname_1", 
+                "id": "44b277eb-39be-4921-be31-3d61b43651d7", 
+                "name": "json_rack_instance", 
+                "status": "ACTIVE"
+            }, 
+            {
+                "host": "hostname_1", 
+                "id": "098653ba-218b-47ce-936a-e0b749101f81", 
+                "name": "xml_rack_instance", 
+                "status": "ACTIVE"
+            }
+        ]
+    }
+}

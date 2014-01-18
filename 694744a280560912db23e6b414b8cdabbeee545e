@@ -1,0 +1,8 @@
+Verified+2: Jenkins
+Approved+1: Diane Fleming <diane.fleming@rackspace.com>
+Code-Review+2: Diane Fleming <diane.fleming@rackspace.com>
+Submitted-by: Jenkins
+Submitted-at: Sat, 18 Jan 2014 14:48:04 +0000
+Reviewed-on: https://review.openstack.org/67399
+Project: openstack/database-api
+Branch: refs/heads/master

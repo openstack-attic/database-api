@@ -1,5 +1,12 @@
+.DS_Store
+
 # Testenvironment
 .tox/
 
 # Generated files
 target/
+
+# Editors
+*~
+.*.swp
+.bak

@@ -1,0 +1,38 @@
+# These files are ignored while running openstack-doc-text
+# via tox.
+# 
+# From apidocs
+bookinfo.xml
+includewars.xml
+# From apidocs/src/samples/not_used
+db-auth-20.xml
+db-auth.xml
+db-create-database-instance-response.xml
+db-credentials-20.xml
+db-credentials.xml
+db-flavors-response-no8_16.xml
+db-gs-create-database-instance-response.xml
+db-guest-update-request.xml
+db-instance-reboot-request.xml
+db-instance-resize-flavor-request.xml
+db-instance-resize-flavor-response.xml
+db-instances-paged-index-response.xml
+db-instance-update-guest-request.xml
+db-mgmt-get-account-details-response.xml
+db-mgmt-get-host-detail-response.xml
+db-mgmt-get-instance-details-response.xml
+db-mgmt-get-root-details-response.xml
+db-mgmt-get-storage-response.xml
+db-mgmt-get-usage-account-response.xml
+db-mgmt-get-usage-all-response.xml
+db-mgmt-get-usage-instance-response.xml
+db-mgmt-host-update-response.xml
+db-mgmt-instance-diagnostics-response.xml
+db-mgmt-instance-hwinfo-response.xml
+db-mgmt-instance-index-response.xml
+db-mgmt-list-accounts-response.xml
+db-mgmt-list-hosts-response.xml
+db-mgmt-migrate-instance-force-response.xml
+db-mgmt-migrate-instance-response.xml
+db-mgmt-reset-instance-task-status-response.xml
+db-response-types.xml

@@ -17,7 +17,8 @@
         <include href="dbaas.xsd"/>
     </grammars>
 
-    <resources base="https://ord.databases.api.rackspacecloud.com">
+    <resources base="https://ord.databases.api.rackspacecloud.com"
+               xml:id="dbaas">
         <resource id="versions" path="">
             <method href="#getVersions"/>
         </resource>

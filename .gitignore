@@ -11,6 +11,7 @@ apidocs/src/bookinfo.xml
 # Generated files
 target/
 publish-docs/
+/build-*.log.gz
 
 # Editors
 *~

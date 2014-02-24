@@ -1,30 +1,30 @@
 {
     "users": [
         {
-            "databases": [], 
+            "databases": [],
             "name": "dbuser1"
-        }, 
+        },
         {
             "databases": [
                 {
                     "name": "databaseB"
-                }, 
+                },
                 {
                     "name": "databaseC"
                 }
-            ], 
+            ],
             "name": "dbuser2"
-        }, 
+        },
         {
-            "databases": [], 
+            "databases": [],
             "name": "dbuser3"
-        }, 
+        },
         {
             "databases": [
                 {
                     "name": "sampledb"
                 }
-            ], 
+            ],
             "name": "demouser"
         }
     ]

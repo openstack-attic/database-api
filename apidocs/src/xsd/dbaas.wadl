@@ -246,10 +246,10 @@
                     Instance</caption>
                 <thead>
                     <tr>
-                        <td colspan="1">Applies To</td>
-                        <td colspan="1">Name</td>
-                        <td colspan="3">Description</td>
-                        <td colspan="1">Required</td>
+                        <th colspan="1">Applies To</th>
+                        <th colspan="1">Name</th>
+                        <th colspan="3">Description</th>
+                        <th colspan="1">Required</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -787,9 +787,9 @@
                     Database</caption>
                 <thead>
                     <tr>
-                        <td colspan="1">Name</td>
-                        <td colspan="3">Description</td>
-                        <td colspan="1">Required</td>
+                        <th colspan="1">Name</th>
+                        <th colspan="3">Description</th>
+                        <th colspan="1">Required</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -834,7 +834,7 @@
                 <col width="100%"/>
                 <thead>
                     <tr>
-                        <td>Character</td>
+                        <th>Character</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -864,7 +864,7 @@
                 <col width="100%"/>
                 <thead>
                     <tr>
-                        <td>Character</td>
+                        <th>Character</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -896,8 +896,8 @@
                     Name</caption>
                 <thead>
                     <tr>
-                        <td>Restriction</td>
-                        <td>Value</td>
+                        <th>Restriction</th>
+                        <th>Value</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -1140,10 +1140,10 @@
             <table rules="all" width="500">
                 <caption>Required Attributes for Create User</caption> <thead>
                     <tr>
-                        <td colspan="1">Applies To</td>
-                        <td colspan="1">Name</td>
-                        <td colspan="2">Description</td>
-                        <td colspan="1">Required</td>
+                        <th colspan="1">Applies To</th>
+                        <th colspan="1">Name</th>
+                        <th colspan="2">Description</th>
+                        <th colspan="1">Required</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -1190,7 +1190,7 @@
                 <col width="100%"/>
                 <thead>
                     <tr>
-                        <td>Character</td>
+                        <th>Character</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -1220,7 +1220,7 @@
                 <col width="100%"/>
                 <thead>
                     <tr>
-                        <td>Character</td>
+                        <th>Character</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -1256,8 +1256,8 @@
                     Name, and Password</caption>
                 <thead>
                     <tr>
-                        <td>Restriction</td>
-                        <td>Value</td>
+                        <th>Restriction</th>
+                        <th>Value</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -308,8 +308,8 @@
                     Codes</caption>
                 <thead>
                     <tr>
-                        <td>Code</td>
-                        <td>Description</td>
+                        <th>Code</th>
+                        <th>Description</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -383,9 +383,9 @@
             <informaltable rules="all">
                 <thead>
                     <tr align="center">
-                        <td colspan="1">Verb</td>
-                        <td colspan="2">URI</td>
-                        <td colspan="3">Description</td>
+                        <th colspan="1">Verb</th>
+                        <th colspan="2">URI</th>
+                        <th colspan="3">Description</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -480,9 +480,9 @@ Server: Jetty(8.0.y.z-SNAPSHOT)</literallayout>
             <informaltable rules="all">
                 <thead>
                     <tr align="center">
-                        <td colspan="2">Fault Type</td>
-                        <td colspan="1">Associated Error Code</td>
-                        <td colspan="3">Description</td>
+                        <th colspan="2">Fault Type</th>
+                        <th colspan="1">Associated Error Code</th>
+                        <th colspan="3">Description</th>
                     </tr>
                 </thead>
                 <tbody>

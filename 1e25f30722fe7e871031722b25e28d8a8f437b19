@@ -1,0 +1,9 @@
+Verified+2: Jenkins
+Code-Review+2: Nikhil Manchanda <SlickNik@gmail.com>
+Approved+1: Andreas Jaeger <jaegerandi@gmail.com>
+Code-Review+2: Andreas Jaeger <jaegerandi@gmail.com>
+Submitted-by: Jenkins
+Submitted-at: Wed, 23 Apr 2014 19:59:56 +0000
+Reviewed-on: https://review.openstack.org/88718
+Project: openstack/database-api
+Branch: refs/heads/master

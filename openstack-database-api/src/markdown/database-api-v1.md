@@ -551,7 +551,7 @@ Example entity:
 
 ### Security Groups: `/v1/security-groups`
 
-A security group is is a collection of rules that act as a firewall to control
+A security group is a collection of rules that act as a firewall to control
 traffic that is allowed to reach your database instance. Whenever an instance
 is created, a security group is also created and associated with the instance.
 You can add rules to the security group that control the inbound traffic

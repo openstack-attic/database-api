@@ -101,7 +101,7 @@
 		      <copy file="src/xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/xsd/cdb.xsd"/>
 		      <copy file="src/xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.xsd"/>
 		       <java
-			  jar="${net.sourceforge.saxon:saxon:jar}"
+			  jar="${net.sourceforge.Saxon:Saxon:jar}"
 			  fork="true">
 			<arg value="-u"/>
 			<arg value="-s:src/xsd/dbaas.wadl"/>

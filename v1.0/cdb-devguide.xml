@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book [
-        <!-- Some useful entities borrowed from HTML -->
-        <!ENTITY ndash  "&#x2013;">
-        <!ENTITY mdash  "&#x2014;">
-        <!ENTITY hellip "&#x2026;">
+<!-- Some useful entities borrowed from HTML -->
+<!ENTITY ndash  "&#x2013;">
+<!ENTITY mdash  "&#x2014;">
+<!ENTITY hellip "&#x2026;">
 
-        <!-- Useful for describing APIs -->
-        <!ENTITY GET    '<command xmlns="http://docbook.org/ns/docbook">GET</command>'>
-        <!ENTITY PUT    '<command xmlns="http://docbook.org/ns/docbook">PUT</command>'>
-        <!ENTITY POST   '<command xmlns="http://docbook.org/ns/docbook">POST</command>'>
-        <!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
-
-        <!-- changing authentication endpoints; define entities for US & UK rather than maintaining in text -->
-        <!ENTITY ENDPOINT-US "https://identity.api.rackspacecloud.com/v1.1/">
-        <!ENTITY ENDPOINT-UK "https://lon.identity.api.rackspacecloud.com/v1.1/">
-        <!ENTITY ENDPOINT-US-20 "https://identity.api.rackspacecloud.com/v2.0/">
-        <!ENTITY ENDPOINT-UK-20 "https://lon.identity.api.rackspacecloud.com/v2.0/">
-
-        <!ENTITY CHECK  '<inlinemediaobject xmlns="http://docbook.org/ns/docbook">
+<!-- Useful for describing APIs -->
+<!ENTITY GET    '<command xmlns="http://docbook.org/ns/docbook">GET</command>'>
+<!ENTITY PUT    '<command xmlns="http://docbook.org/ns/docbook">PUT</command>'>
+<!ENTITY POST   '<command xmlns="http://docbook.org/ns/docbook">POST</command>'>
+<!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
+<!-- changing authentication endpoints; define entities for US & UK rather than maintaining in text -->
+<!ENTITY ENDPOINT-US "https://identity.api.rackspacecloud.com/v1.1/">
+<!ENTITY ENDPOINT-UK "https://lon.identity.api.rackspacecloud.com/v1.1/">
+<!ENTITY ENDPOINT-US-20 "https://identity.api.rackspacecloud.com/v2.0/">
+<!ENTITY ENDPOINT-UK-20 "https://lon.identity.api.rackspacecloud.com/v2.0/">
+<!ENTITY CHECK  '<inlinemediaobject xmlns="http://docbook.org/ns/docbook">
                  <imageobject>
                   <imagedata fileref="img/Check_mark_23x20_02.svg"
                              format="SVG" scale="60"/>
                 </imageobject>
               </inlinemediaobject>'>
-
-        <!ENTITY ARROW  '<inlinemediaobject xmlns="http://docbook.org/ns/docbook">
+<!ENTITY ARROW  '<inlinemediaobject xmlns="http://docbook.org/ns/docbook">
                  <imageobject>
                   <imagedata fileref="img/Arrow_east.svg"
                              format="SVG" scale="60"/>
@@ -38,11 +35,9 @@
     xmlns:m="http://www.w3.org/1998/Math/MathML"
     xmlns:html="http://www.w3.org/1999/xhtml" xml:id="cdb-devguide"
     version="5.0">
-
     <?rax title.font.size="35px" subtitle.font.size="20px"?>
-    <title>OpenStack Cloud Databases Developer Guide</title>
-    <titleabbrev>OpenStack Cloud Databases Developer
-        Guide</titleabbrev>
+    <title>OpenStack Cloud Databases API v1.0 Reference</title>
+    <titleabbrev>Cloud Databases API Reference</titleabbrev>
     <info>
         <author>
             <personname>
@@ -50,7 +45,7 @@
                 <surname/>
             </personname>
             <affiliation>
-                <orgname>OpenStack LLC</orgname>
+                <orgname>OpenStack Foundation</orgname>
             </affiliation>
         </author>
         <copyright>
@@ -58,11 +53,12 @@
             <year>2011</year>
             <year>2012</year>
             <year>2013</year>
-            <holder>OpenStack LLC</holder>
+            <year>2014</year>
+            <holder>OpenStack Foundation</holder>
         </copyright>
         <releaseinfo>API v1.0</releaseinfo>
         <productname>OpenStack Cloud Databases</productname>
-        <pubdate>2013-05-02</pubdate>
+        <pubdate></pubdate>
         <legalnotice role="apache2">
             <annotation>
                 <remark>Copyright details are filled in by the
@@ -75,7 +71,6 @@
                 OpenStack Cloud Databases Application Programming
                 Interface (<abbrev>API</abbrev>).</para>
         </abstract>
-
         <revhistory>
             <revision>
                 <date>2013-05-02</date>
@@ -89,7 +84,6 @@
                 </revdescription>
             </revision>
         </revhistory>
-
         <cover>
             <para>this is a placeholder for the front cover</para>
         </cover>

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.rackspace.cloud.dbaas</groupId>
-  <artifactId>dbaas-docs</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <name>Database Public API Spec</name>
-  <packaging>jar</packaging>
+	<parent>
+		<groupId>org.openstack.docs</groupId>
+		<artifactId>parent-pom</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>openstack-v1.0</artifactId>
+	<packaging>jar</packaging>
+	<name>OpenStack Databases API v1.0 Reference</name>
+	<properties>
+		<!-- This is set by Jenkins according to the branch. -->
+		<release.path.name>local</release.path.name>
+		<comments.enabled>1</comments.enabled>
+	</properties>  
   <dependencies>
     <dependency>
       <groupId>net.sourceforge.saxon</groupId>
@@ -26,7 +35,7 @@
 	<artifactId>clouddocs-maven-plugin</artifactId>
 	<!-- this <version> relates only to the *plugin* used for document formatting -->
 	<!-- the version of the *API* that is the subject of the document is indicated within each document -->
-	<version>1.15.0</version>
+	<!--<version>1.15.0</version>-->
 	<executions>
 	  
 	  <execution>
@@ -37,7 +46,7 @@
 	    <phase>generate-sources</phase>
 	    <configuration>
 	      <security>reviewer</security>
-	      <sourceDirectory>src</sourceDirectory>
+	      <sourceDirectory>.</sourceDirectory>
 	      <highlightSource>false</highlightSource>
 	      <trimWadlUriCount>2</trimWadlUriCount>
 	      <!-- this is the public-facing client developer guide formerly known as PublicAPISpec.xml -->
@@ -91,26 +100,26 @@
 		  <configuration>
 		    <target>
 		      <copy todir="${project.build.directory}/generated-resources/normalized/api/v1.0">
-			<fileset dir="src">
+			<fileset dir=".">
 			  <include name="xslts/**"/>
 			</fileset>
-			<fileset dir="src">
+			<fileset dir=".">
 			  <include name="samples/**"/>
 			</fileset>
 		      </copy>
-		      <copy file="src/xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/xsd/cdb.xsd"/>
-		      <copy file="src/xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.xsd"/>
+		      <copy file="xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/xsd/cdb.xsd"/>
+		      <copy file="xsd/dbaas.xsd" tofile="${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.xsd"/>
 		       <java
 			  jar="${net.sourceforge.saxon:saxon:jar}"
 			  fork="true">
 			<arg value="-u"/>
-			<arg value="-s:src/xsd/dbaas.wadl"/>
+			<arg value="-s:xsd/dbaas.wadl"/>
 			<arg value="-xsl:${project.build.directory}/generated-resources/xsl/normalizeWadl.xsl"/>
 			<arg value="-o:${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.wadl"/>
 			<arg value="flattenXsds=false"/>
 		      </java>
 		      <replaceregexp file="${project.build.directory}/generated-resources/normalized/api/v1.0/cdb.wadl"
-				     match="file:/.*/src/xsd/dbaas.xsd"
+				     match="file:/.*/xsd/dbaas.xsd"
 				     replace="xsd/cdb.xsd"/>
 		      <war destfile="${project.build.directory}/docbkx/webhelp/cdb-wadls.war" needxmlfile="false">
 			<fileset dir="${project.build.directory}/generated-resources/normalized"/>			
@@ -144,26 +153,4 @@
             </plugin>
         </plugins>
       </build>
-      <profiles>                                                                                              
-    <profile>                                                                                           
-      <id>Rackspace Research Repositories</id>                                                        
-      <activation>                                                                                    
-        <activeByDefault>true</activeByDefault>                                                     
-      </activation>                                                                                   
-      <repositories>                                                                                  
-        <repository>                                                                                
-          <id>rackspace-research</id>                                                             
-          <name>Rackspace Research Repository</name>                                              
-          <url>http://maven.research.rackspacecloud.com/content/groups/public/</url>              
-        </repository>                                                                               
-      </repositories>                                                                                 
-      <pluginRepositories>                                                                            
-        <pluginRepository>                                                                          
-          <id>rackspace-research</id>                                                             
-          <name>Rackspace Research Repository</name>                                              
-          <url>http://maven.research.rackspacecloud.com/content/groups/public/</url>              
-        </pluginRepository>                                                                         
-      </pluginRepositories>                                                                           
-    </profile> 
-  </profiles>
 </project>
